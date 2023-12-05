@@ -1,20 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Lato', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 
+ul li{
+    list-style: none;
+}
+
+.main-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* contenuti del aside nel header  */
 header aside{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh ;
+    height: 95vh ;
     color: lightgray ;
     gap: 20px;
 }
 header{
     background-color: #000000;
-    padding: 10px;
+    padding: 20px;
     padding-right: 100px;
 }
 header figure img{
@@ -23,6 +41,7 @@ header figure img{
 header aside ul li{
     margin-block:10px ;
 }
+
 header aside div:last-of-type{
     display: flex;
     flex-direction: column;
@@ -31,11 +50,109 @@ header aside div:last-of-type{
     
 }
 
-main nav{
-    border:1px solid navy;
+
+/* contenuti della nav  */
+main{
+    width: 100%;
 }
 
-.prova{
+main div nav{
+    background-color: #141922;
+    color: white;
+    padding:20px
+}
+
+nav ul{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-inline: 10px;
+    color: #7B7D81;
+}
+
+.upgrade{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #090B13;
+    padding: 20px;
+}
+
+.upgrade a{
+    text-decoration: none;
+    padding-inline: 30px ;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+}
+
+.recently-played{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #141922;
+    color: white;
+}
+
+.album-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.album{
+    width: 150px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+   
+}
+
+.album-for{
+    width: 150px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+   
+}
+
+.create-for{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #141922;
+    color: white;
+}
+
+.album-for-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.popular-album{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #141922;
+    color: white;
+}
+
+.popular-album-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
