@@ -19,6 +19,7 @@ ul li{
 .main-container{
     display: flex;
     justify-content: flex-start;
+    position: relative;
 }
 
 /* contenuti del aside nel header  */
@@ -155,4 +156,77 @@ nav ul li {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+/* contenuti del footer  */
+
+footer{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+    color: white;
+    background-color: #282828;
+}
+
+.footer-center div ul li,
+.footer-center div:last-of-type,
+.footer-right ul li{
+    display: inline-block;
+    padding: 10px ;
+}
+ 
+.footer-center div:last-of-type{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footer-left{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.footer-left img{
+    width: 15%;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-right{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.slidecontainer input{
+    width: 400px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    background: grey ;
+    height: 5px;
+    border-radius: 20px;  
+}
+
+.footer-right ul li input{
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    background: grey ;
+    height: 5px;
+    border-radius: 20px;
 }
